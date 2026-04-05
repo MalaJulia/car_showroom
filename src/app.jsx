@@ -6,7 +6,7 @@ import CarPage from "./pages/CarsPage";
 import Footer from "./components/Footer/Footer";
 
 
-export function App() {
+export default function App() {
   return (
     <>
       <BrowserRouter>
