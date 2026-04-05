@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -17,15 +19,15 @@ export default function Header() {
 
   return (
     <div className="header">
-      <a href="/" className="headerName">
+      <Link to="/" className="headerName">
         {" "}
         C A R<span> S H O W R O O M </span>
-      </a>
+      </Link>
       {isHomePage ? (
         <div className="linkContainer">
-          <a href="/#catalog">Каталог</a>
-          <a href="/#aboutUs">Про нас</a>
-          <a href="/#contact">Контакти</a>
+          <HashLink to="#catalog">Каталог</HashLink>
+          <HashLink to="#aboutUs">Про нас</HashLink>
+          <HashLink to="#contact">Контакти</HashLink>
         </div>
       ) : (
         <></>
@@ -45,13 +47,13 @@ export default function Header() {
           Головна сторінка
         </Button>
       ) : (
-        <a href="/">
+        <Link to="/">
           {" "}
           <HomeIcon
             fontSize="medium"
             sx={{ color: "gold", paddingRight: "5px" }}
           />
-        </a>
+        </Link>
       )}
     </div>
   );

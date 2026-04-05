@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import "./style.css";
+import { HashLink } from 'react-router-hash-link';
 
 export default function AboutUs() {
   return (
@@ -17,7 +18,7 @@ export default function AboutUs() {
           position: "inherit",
         }}
       >
-        <a href="#catalog">Перейти до каталогу</a>
+        <HashLink to="#catalog">Перейти до каталогу</HashLink>
       </Button>
     </div>
   );
