@@ -1,0 +1,187 @@
+.card:hover {
+    box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.5),
+        0 0 60px rgba(255, 215, 0, 0.4),
+        0 0 100px rgba(255, 215, 0, 0.2);
+}
+
+#catalog {
+    margin-bottom: 50px;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.textContainer p {
+    color: rgb(186, 17, 17)
+}
+
+.textContainer h2 {
+    color: white;
+    font-size: 4rem;
+    margin: 10px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 3rem;
+    }
+}
+
+.filterAndSearchContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+.mainBlockDetails {
+    display: flex;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center
+    }
+}
+
+.detailsContainer {
+    width: 50%;
+
+    @media screen and (max-width: 1024px) {
+        width: 80%;
+    }
+}
+
+.detailsContainer h2 {
+    color: white;
+    font-size: 4.25rem;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 3rem;
+    }
+}
+
+.title {
+    margin-top: 50px;
+    color: white;
+    font-size: 3.25rem;
+    text-align: center;
+}
+
+.price p {
+    color: rgb(186, 17, 17);
+    font-weight: bold;
+    padding-right: 3px;
+}
+
+.price {
+    display: flex;
+    width: 60%;
+
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
+}
+
+.characteristicsAndPolicy {
+    height: 50%;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(30, 30, 30);
+
+    @media screen and (max-width: 1024px) {
+        width: 99%;
+    }
+
+}
+
+.characteristicsConteiner span,
+.policy span {
+    color: white;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+    }
+}
+
+.characteristicsConteiner h2 {
+    font-size: 1.25rem;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+    }
+}
+
+.reviewBlock {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 911px) {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px
+    }
+}
+
+.formBlock {
+    width: 40%;
+    padding-left: 50px;
+
+    @media screen and (max-width: 911px) {
+        width: 400px;
+        display: flex;
+        justify-self: center;
+        padding-left: 0px;
+        margin-bottom: 20px
+    }
+}
+
+.review {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.oneReview {
+    width: 80%;
+    height: 150px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+
+    @media screen and (max-width: 820px) {
+        width: 380px
+    }
+}
+
+.name {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.date {
+    text-align: end;
+}

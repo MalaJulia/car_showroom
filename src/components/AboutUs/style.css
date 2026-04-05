@@ -1,0 +1,33 @@
+.aboutUsContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 800px) {
+        width: 100vw;
+        text-align: center;
+    }
+}
+
+.premium {
+    color: rgb(186, 17, 17)
+}
+
+.aboutUsContainer h2 {
+    color: white;
+    font-size: 4.5rem;
+    margin: 10px;
+}
+
+.preview {
+    color: grey;
+    font-size: 1.25rem;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
